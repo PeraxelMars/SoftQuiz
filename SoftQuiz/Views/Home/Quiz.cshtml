@@ -1,0 +1,12 @@
+﻿@section scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+    @*<script src="~/app/dataService.js"></script>*@
+    <script src="~/app/softQuizController.js"></script>
+}
+
+
+<div id="angCont" ng-app="SoftQuizApplication" ng-controller="SoftQuizController" ng-init="loadQuiz('@HttpRuntime.AppDomainAppVirtualPath')">
+    <input type="hidden" id="selectedQuiz" value="@ViewBag.SelectedQuiz" />
+    <div ng-include="getInclude()"></div>
+</div>

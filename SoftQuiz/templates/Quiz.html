@@ -1,0 +1,20 @@
+﻿<h1>{{question.question}}</h1>
+<div class="answerWrapper">
+    <div ng-repeat="answer in question.answers"
+         ng-click="answerClicked($event, $index)" id="answer{{$index}}"
+         ng-class="{'selectedAnswer': selectedAnswerIndex == $index}"
+         ng-disabled="lockedAnswer"
+         class="divAnwser">
+        {{answer.text}}<br />
+        <!--{{answer.isCorrect}}-->
+    </div>
+    <div style="text-align:center">
+        <button id="btnAccept" type="button" ng-click="lockAnswer()" ng-disabled="selectedAnswerId < 0 || lockedAnswer" ng-show="!lockedAnswer">Accept the answer</button>
+        <button id="btnNext" type="button" ng-click="next()" ng-show="lockedAnswer">Next</button>
+    </div>
+</div>
+
+<!--<div style="border:1px solid black; display:inline-block; padding:1em; position:absolute; right:1em; top:1em">
+    The json data (just for DEBUG):<br />
+    <pre>{{question | json}}</pre>
+</div>-->

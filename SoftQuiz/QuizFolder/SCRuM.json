@@ -1,0 +1,38 @@
+﻿[
+  {
+    "question": "Hur långt är ett snöre?",
+    "answers": [
+      {
+        "id": "a1",
+        "text": "Alltid för kort",
+        "isCorrect": false
+      },
+      {
+        "id": "a2",
+        "text": "Precis lagom långt om det räcker till",
+        "isCorrect": true
+      },
+      {
+        "id": "a3",
+        "text": "Det har inte du med att göra :-)",
+        "isCorrect": false
+      }
+    ]
+  },
+
+  {
+    "question": "Hur lång måste en portal vara innan det blir en tunnel?",
+    "answers": [
+      {
+        "id": "b1",
+        "text": "Det beror på vem man frågar",
+        "isCorrect": true
+      },
+      {
+        "id": "b2",
+        "text": "2,5 meter",
+        "isCorrect": false
+      }
+    ]
+  }
+]

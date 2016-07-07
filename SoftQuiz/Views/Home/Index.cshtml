@@ -1,0 +1,19 @@
+﻿@model List<string>
+
+<style>
+    a {
+        width:125px;
+        height:180px;
+        display:inline-block;
+        background-position-x:left;
+    }
+</style>
+
+@{
+    foreach (string link in Model)
+    {
+        <div>
+            @Html.ActionLink(" ", "Quiz", new { selectedQuiz = link }, new { style = "background-image: url('images/scrum.png')" })
+        </div>
+    }
+}
