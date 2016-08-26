@@ -19,6 +19,7 @@ namespace SoftQuiz.Controllers
         public ActionResult Quiz(string selectedQuiz)
         {
             ViewBag.SelectedQuiz = selectedQuiz;
+
             return View();
         }
     }
